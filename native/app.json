@@ -1,0 +1,1 @@
+{"expo":{"name":"Lumo 眠感","slug":"lumo-sleep","version":"0.1.0","orientation":"portrait","userInterfaceStyle":"light","ios":{"supportsTablet":true,"bundleIdentifier":"com.lumo.sleep"},"android":{"package":"com.lumo.sleep"},"web":{"bundler":"metro"}}}

@@ -1,0 +1,4 @@
+import React from 'react';
+import Svg,{Path,Circle} from 'react-native-svg';
+const paths={today:'M20.8 13A8.4 8.4 0 0 1 11 3.2 8.5 8.5 0 1 0 20.8 13Z',report:'M5 20V13M12 20V4M19 20V9',sound:'M4 10v4M8 6v12M12 3v18M16 7v10M20 10v4',me:'M5 21a7 7 0 0 1 14 0M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0',arrow:'M9 6l6 6-6 6',back:'M15 6l-6 6 6 6',pause:'M8 5v14M16 5v14',play:'M8 4l12 8-12 8Z',spark:'m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z',sun:'M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5'};
+export default function Icon({name,size=22,color='#8499ba'}){return <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round"><Path d={paths[name]||paths.today}/>{name==='sun'&&<Circle cx="12" cy="12" r="4"/>}</Svg>}
